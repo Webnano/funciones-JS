@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones-4_colores</title>
+    <link rel="stylesheet" href="./asset/css/stylo.css">
+</head>
+<body>
+    <div class="titulo"><h1>4_colores</h1></div>
+    
+    <div class ="container">
+        <div  id = "c1" class ="color1"></div>
+        <div  id = "c2" class ="color2"></div>
+        <div  id = "c3" class ="color3"></div>
+        <div  id = "c4" class ="color4"></div>
+        
+    </div>
+    <div class = "direccion"><a href="index.html">Volver al inicio</a></div>
+
+    <script>
+      
+      function pintar(ele, color){
+        ele.style.backgroundColor = color
+    }
+    
+    let ele = document.getElementById("c1");
+    ele.addEventListener("click", ()=>{pintar(ele,'black')});
+
+   
+    let ela = document.getElementById("c2");
+    ela.addEventListener("click", ()=>{pintar(ela,'black')});
+
+    let eli = document.getElementById("c3");
+    eli.addEventListener("click", ()=>{pintar(eli,'black')});
+
+    let elu = document.getElementById("c4");
+    elu.addEventListener("click", ()=>{pintar(elu,'black')});
+
+    
+
+
+
+    </script>
+
+</body>
+</html>

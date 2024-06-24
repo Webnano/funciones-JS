@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key_Down</title>
+    <link rel="stylesheet" href="./asset/css/stylo.css">
+</head>
+<body>
+    <h1 class = "titulo">Id_Key</h1>
+    
+    <div class = "imagenes">
+        <div id="key" class="asd"></div>
+    </div>
+    <div class = "direccion"><a href="index.html">Volver al inicio</a></div>
+    
+    <div id="key1"></div>
+    
+    <script>
+        /* Funcion colores: a - s -d*/
+        let colorNuevo = "";
+        function cambiarColor(event) {
+        switch (event.key) {
+            case "a":
+            colorNuevo  = "pink";
+                break;
+            case "s":
+            colorNuevo  = "orange";
+                break;
+            case "d":
+            colorNuevo  = "cyan";
+                break;
+            } 
+            document.getElementById("key").style.backgroundColor = colorNuevo ;
+        }
+            document.addEventListener("keydown", cambiarColor);
+
+        /*funcion DIV y colores : q - w- r*/
+
+        let colorSeleccionado = "";     
+        function cambiocaja(event) {
+            switch (event.key) {
+                case "q":
+                    colorSeleccionado = "purple";
+                    break;
+                case "w":
+                    colorSeleccionado = "gray";
+                    break;
+                case "e":
+                    colorSeleccionado = "brown";
+                    break;
+                    default:
+                    
+                return;
+            }
+            const nuevoDiv = document.createElement("div");
+            nuevoDiv.style.width = "200px";
+            nuevoDiv.style.height = "200px";
+            nuevoDiv.style.backgroundColor = colorSeleccionado;
+            nuevoDiv.style.border = "1px solid black";
+            
+            document.body.appendChild(nuevoDiv);
+        }
+        document.addEventListener("keydown", cambiocaja);
+    </script>
+</>
+</html>

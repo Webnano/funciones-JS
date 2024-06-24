@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: aliceblue;
+    background-color: #1F3A5F;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*home*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 80px;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+}
+.paginas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.fotos{
+    width: 300px;
+    height: 200px;
+}
+.direccion{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    gap: 15px;
+}
+.direccion a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+/*pintar*/
+#ele1{
+    background-color: green;
+}
+/*4_colores*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.img{
+    width: 200;
+    height: 200;
+}
+
+.color1{
+    display: flex;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+.color2{
+    display: flex;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+.color3{
+    display: flex;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.color4{
+    display: flex;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+/*id_key*/
+.asd{
+    display: flex;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
